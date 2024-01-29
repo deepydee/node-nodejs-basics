@@ -7,6 +7,10 @@ const __dirname = dirname(__filename);
 
 const filePath = join(__dirname, 'files', 'fileToRead.txt');
 
+/**
+ * Implement function that reads file `fileToRead.txt` content using
+ * Readable Stream and prints it's content into process.stdout
+ */
 const read = async () => {
     const readStream = createReadStream(filePath);
 

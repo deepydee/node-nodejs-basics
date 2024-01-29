@@ -5,6 +5,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+/**
+ * Implement function that prints all array of filenames from `files` folder
+ * into console (if files folder doesn't exists Error with message `FS operation
+ * failed` must be thrown)
+ */
 const list = async () => {
     const dir = join(__dirname, 'files');
 

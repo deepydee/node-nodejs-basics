@@ -7,6 +7,10 @@ const __dirname = dirname(__filename);
 
 const filePath = join(__dirname, 'files', 'fileToWrite.txt');
 
+/**
+ * Implement function that writes process.stdin data into file `fileToWrite.txt`
+ * content using Writable Stream
+ */
 const write = async () => {
     const writeStream = createWriteStream(filePath);
 

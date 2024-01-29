@@ -4,6 +4,11 @@ import http from 'http';
 import url from 'url';
 import fs from 'fs';
 
+/**
+ * You should refactor file (you can add additional imports if needed)
+ * `cjsToEsm.cjs` - rewrite it to it's equivalent in ECMAScript notation
+ * (and rename it to `esm.mjs`)
+ */
 const { release, version } = os;
 const { createServer } = http;
 

@@ -10,6 +10,10 @@ const __dirname = dirname(__filename);
 const inFile = join(__dirname, 'files', 'fileToCompress.txt');
 const outFile = join(__dirname, 'files', 'archive.gz');
 
+/**
+ * Implement function that compresses file `fileToCompress.txt` to `archive.gz`
+ * using zlib and Streams API
+ */
 const compress = async () => {
     pipeline(
         createReadStream(inFile),

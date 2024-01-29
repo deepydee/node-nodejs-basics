@@ -5,6 +5,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+/**
+ * Implement function that deletes file `fileToRemove.txt`
+ * (if there's no file `fileToRemove.txt` Error with message `FS operation failed`
+ * must be thrown)
+ */
 const remove = async () => {
     const filePath = join(__dirname, 'files', 'fileToRemove.txt');
 

@@ -8,6 +8,10 @@ const __dirname = dirname(__filename);
 
 const filePath = join(__dirname, 'files', 'fileToCalculateHashFor.txt');
 
+/**
+ * Implement function that calculates SHA256 hash for file
+ * `fileToCalculateHashFor.txt` and logs it into console as hex using Streams API
+ */
 const calculateHash = async () => {
     const hashStream = createHash('sha256');
 
