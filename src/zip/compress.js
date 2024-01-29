@@ -19,12 +19,10 @@ const compress = async () => {
             if (err) {
               console.error('Pipeline failed', err);
             } else {
-              console.log('Pipeline succeeded');
+              console.log('File compressed successfully');
             }
         }
       );
-
-      console.log('File compressed successfully');
 };
 
 await compress();
